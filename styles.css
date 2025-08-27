@@ -1,0 +1,52 @@
+/* 🎨 Estilos de MiguelFIT */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  background: #00b894;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00cec9;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0984e3;
+  color: #fff;
+}
+
+footer {
+  background: #00b894;
+  padding: 10px;
+  margin-top: 20px;
+}
