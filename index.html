@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#4CAF50">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MiguelFIT</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Miguelfit</title>
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🏋️ MiguelFIT</h1>
-    <p>Tu panel personal de entrenamiento</p>
+    <h1>💪 Miguelfit</h1>
   </header>
 
   <main>
-    <section id="dashboard">
-      <h2>📊 Progreso</h2>
-      <p>Aquí verás tu evolución diaria.</p>
+    <section id="today">
+      <h2>Entreno de hoy</h2>
+      <div id="workout"></div>
     </section>
 
-    <section id="rutinas">
-      <h2>💪 Rutinas</h2>
-      <button onclick="agregarRutina()">Añadir rutina</button>
-      <ul id="lista-rutinas"></ul>
+    <section id="diet">
+      <h2>Dieta de hoy</h2>
+      <div id="mealplan"></div>
+    </section>
+
+    <button id="weekly-btn">📅 Ver semana completa</button>
+    <section id="weekly" class="hidden">
+      <h2>Planificación semanal</h2>
+      <div id="weekplan"></div>
     </section>
   </main>
-
-  <footer>
-    <p>© 2025 MiguelFIT</p>
-  </footer>
 
   <script src="app.js"></script>
 </body>
