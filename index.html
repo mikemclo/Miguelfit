@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Miguelfit</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.webmanifest" />
 </head>
 <body>
-  <header>
+  <header class="topbar">
     <h1>💪 Miguelfit</h1>
+    <p class="subtitle">Entreno del día + Dieta con cantidades</p>
   </header>
 
-  <main>
-    <section id="today">
-      <h2>Entreno de hoy</h2>
-      <div id="workout"></div>
+  <main class="container">
+    <nav class="tabs">
+      <button class="tab active" data-tab="hoy">Hoy</button>
+      <button class="tab" data-tab="semana">Semana</button>
+    </nav>
+
+    <!-- HOY -->
+    <section id="hoy" class="tabpanel active">
+      <div class="card">
+        <h2>Entreno de hoy (<span id="hoy-dia"></span>)</h2>
+        <div id="workout"></div>
+      </div>
+
+      <div class="card">
+        <h2>Dieta de hoy (con gramos)</h2>
+        <div id="mealplan"></div>
+        <div class="note">
+          <strong>Nota:</strong> cantidades pensadas para 80 kg en fase de volumen.
+          Ajusta +/− 10 % según hambre/energía.
+        </div>
+      </div>
     </section>
 
-    <section id="diet">
-      <h2>Dieta de hoy</h2>
-      <div id="mealplan"></div>
-    </section>
-
-    <button id="weekly-btn">📅 Ver semana completa</button>
-    <section id="weekly" class="hidden">
-      <h2>Planificación semanal</h2>
-      <div id="weekplan"></div>
+    <!-- SEMANA -->
+    <section id="semana" class="tabpanel">
+      <div class="card">
+        <h2>Planificación semanal</h2>
+        <div id="weekplan"></div>
+      </div>
     </section>
   </main>
+
+  <footer class="footer">Miguelfit © 2025</footer>
 
   <script src="app.js"></script>
 </body>
